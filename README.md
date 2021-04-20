@@ -20,7 +20,7 @@ You can exclude users or include only one or two users.
    | --- | --- |
    | EXE/Script | PRTG-LoggedOnUser.ps1 |
    | Parameters | -ComputerName %host |
-   | Security Context | Use Windows credentials of parent device" or use "-Username" and "-Password |
+   | Security Context | Use Windows credentials of parent device" or use "-Username" and "-Password" |
    
 3. If needed set the "$IncludePattern" or "$ExcludePattern" parameter to include or exclude users
 
@@ -32,8 +32,11 @@ you maybe have to add the target to the TrustedHosts on the PRTG Probe
 example: `Set-Item -Path WSMan:\localhost\Client\TrustedHosts -Value "IPAdressOfMyTarget,HostnameOfMyTarget"`
 
 ## Examples
-![PRTG-PrintJobs-Age](media/PrintJobs_OK.png)
-![PRTG-PrintJobs-Age](media/PrintJobs_Warning.png)
+check if the user "TestUserContoso" is logged on and if not show an Error
+`PRTG-LoggedOnUser.ps1 -ComputerName %host -IncludePattern '(TestUserContoso)'`
+
+![PRTG-LoggedOnUser](media/ok.png)
+![PRTG-LoggedOnUser](media/error.png)
 
 Exceptions
 ------------------
