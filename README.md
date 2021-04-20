@@ -37,7 +37,9 @@ check if the user "TestUserContoso" is logged on and if not show an Error
 set `PRTG-LoggedOnUser.ps1 -ComputerName %host -IncludePattern '(TestUserContoso)'` and set the `Lower Error Limit`
 
 ![PRTG-LoggedOnUser](media/limit.png)
+
 ![PRTG-LoggedOnUser](media/ok.png)
+
 ![PRTG-LoggedOnUser](media/error.png)
 
 Exceptions
