@@ -33,6 +33,7 @@ example: `Set-Item -Path WSMan:\localhost\Client\TrustedHosts -Value "IPAdressOf
 
 ## Examples
 check if the user "TestUserContoso" is logged on and if not show an Error
+
 `PRTG-LoggedOnUser.ps1 -ComputerName %host -IncludePattern '(TestUserContoso)'`
 
 ![PRTG-LoggedOnUser](media/ok.png)
