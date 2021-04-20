@@ -34,8 +34,9 @@ example: `Set-Item -Path WSMan:\localhost\Client\TrustedHosts -Value "IPAdressOf
 ## Examples
 check if the user "TestUserContoso" is logged on and if not show an Error
 
-`PRTG-LoggedOnUser.ps1 -ComputerName %host -IncludePattern '(TestUserContoso)'`
+set `PRTG-LoggedOnUser.ps1 -ComputerName %host -IncludePattern '(TestUserContoso)'` and set the `Lower Error Limit`
 
+![PRTG-LoggedOnUser](media/limit.png)
 ![PRTG-LoggedOnUser](media/ok.png)
 ![PRTG-LoggedOnUser](media/error.png)
 
