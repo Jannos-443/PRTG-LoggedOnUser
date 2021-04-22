@@ -7,7 +7,8 @@ Jannos-443
 
 ## Project Details
 
-Using WinRM and WMI this script counts logged on users
+Using WinRM and WMI this script counts logged on users.
+
 You can exclude users or include only one or two users.
 
 ## HOW TO
