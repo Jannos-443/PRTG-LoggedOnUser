@@ -25,8 +25,9 @@ You can exclude users or include only one or two users.
    
 3. If needed set the "$IncludePattern" or "$ExcludePattern" parameter to include or exclude users
 
+<br>
 
-If you connect to **Computers by IP** or to **not Domain Clients** please read [Microsoft Docs](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_remote_troubleshooting?view=powershell-7.1#how-to-use-an-ip-address-in-a-remote-command)
+If you connect to **Computers by IP** or to **not Domain Clients** please read [Microsoft Docs](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.core/about/about_remote_troubleshooting?view=powershell-7.1#how-to-use-an-ip-address-in-a-remote-command).
 
 you maybe have to add the target to the TrustedHosts on the PRTG Probe 
 
@@ -35,7 +36,7 @@ example: `Set-Item -Path WSMan:\localhost\Client\TrustedHosts -Value "IPAdressOf
 ## Examples
 check if the user "TestUserContoso" is logged on and if not show an Error
 
-set `PRTG-LoggedOnUser.ps1 -ComputerName %host -IncludePattern '(TestUserContoso)'` and set the `Lower Error Limit`
+set `PRTG-LoggedOnUser.ps1 -ComputerName %host -IncludePattern '^(TestUserContoso)$'` and set the `Lower Error Limit`
 
 ![PRTG-LoggedOnUser](media/limit.png)
 
