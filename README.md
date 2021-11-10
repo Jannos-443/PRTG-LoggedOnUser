@@ -19,7 +19,7 @@ You can exclude users or include only one or two users.
 
    | Settings | Value |
    | --- | --- |
-   | EXE/Script | PRTG-LoggedOnUser.ps1 |
+   | EXE/Script Advanced | PRTG-LoggedOnUser.ps1 |
    | Parameters | -ComputerName %host |
    | Security Context | Use Windows credentials of parent device" or use "-Username" and "-Password" |
    
